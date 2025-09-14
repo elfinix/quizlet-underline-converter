@@ -1,47 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="r3K6nDwOZh5lV9w1GRdbe01owWhJ_fbUhYT7b9u6Qpw" />
-    <title>Text to Underline Converter</title>
-    <link rel="icon" href="icon/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body>
-    <main>
-        <p class="title">Text to Underline Converter</p>
-        <p class="subtitle">Developed by: C. ALP</p>
-
-        <div class="transact">
-            <form onkeydown="return event.key !== 'Enter'">
-                <h1 class="text-header">Convert Text</h1>
-                <div class="text-group">
-                    <input type="text" class="input" id="inputText" required>
-                    <label class="placeholder">Text</label>
-                    <button type="button" id="buttonEnter" onclick="transformText()" tabindex="-1">▶</button>
-
-                    <input type="text" class="output" id="outputText" onclick="copyText()" readonly>
-                    <label class="placeholder"></label>
-                    <p id="check">✅</p>
-                </div>
-            </form>
-
-            <div class="history" id="history">
-                <div class="history-header">
-                    <h1 id="history">History</h1>
-                    <button id="buttonTrash" onclick="deleteHistory()"><i class="fa fa-trash-o" style="font-size:20px"></i></button>
-                </div>
-                <div class="history-contents" id="history-contents">
-    
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <script type="text/javascript" src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/src/assets/logo.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text to Underline Converter for Quizlet</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>
