@@ -44,10 +44,10 @@ body {
 
 .section-title {
   letter-spacing: .5px;
-  background: linear-gradient(90deg, #fff 0%, #9fb9ce 70%);
+  background: linear-gradient(90deg, #ffffff 0%, #9fb9ce 70%);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: linear-gradient(90deg, #ffffff 0%, #9fb9ce 70%);
 }
 
 .btn-primary {
